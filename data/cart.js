@@ -17,8 +17,8 @@ export function loadFromStorage() {
   ];
 }
 
-export let cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || 0;
-
+export let cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || 3;
+updateCartQuantity();
 
 // addToCart function
 export function addToCart(productId, addThisMany) {
