@@ -42,19 +42,11 @@ class Clothing extends Product {
 }
 
 class Appliances extends Product {
-  instructionLink;
-  warrantyLink;
-
-  constructor(productDetails) {
-    super(productDetails);
-    this.instructionLink = productDetails.instructionLink;
-    this.warrantyLink = productDetails.warrantyLink;
-  }
 
   extraInfoHTML() {
     return `
-      <a href="${this.instructionLink}" target="_blank">Instruction</a>
-      <a href="${this.warrantyLink}" target="_blank">Warranty</a>
+      <a href="images/appliance-instructions.png" target="_blank">Instruction</a>
+      <a href="images/appliance-warranty.png" target="_blank">Warranty</a>
     `;
   }
 }
