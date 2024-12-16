@@ -17,7 +17,7 @@ export function loadFromStorage() {
   ];
 }
 
-export let cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || 3;
+export let cartQuantity = JSON.parse(localStorage.getItem('cartQuantity')) || 0;
 
 
 // addToCart function
