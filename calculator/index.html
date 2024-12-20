@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+  <p class="operationLine-p">0</p>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('1');
+    ">
+  1
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('2');
+    ">
+  2
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('3');
+    ">
+  3
+  </button>
+
+  <button class="css-rightColumn" onclick="
+    updateLineOperator('+');
+  ">
+  +
+  </button>
+
+  <p></p>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('4');
+    ">
+  4
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('5');
+    ">
+  5
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('6');
+    ">
+  6
+  </button>
+
+  <button class="css-rightColumn" onclick="
+    updateLineOperator('-');
+  ">
+  -
+  </button>
+
+  <p></p>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('7');
+    ">
+  7
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('8');
+    ">
+  8
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('9');
+    ">
+  9
+  </button>
+
+  <button class="css-rightColumn" onclick="
+    updateLineOperator('*');
+  ">
+  *
+  </button>
+
+  <p></p>
+
+  <button class="css-mainColumn" onclick="
+    calculateLine();
+    ">
+  =
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineNumber('0');
+    ">
+  0
+  </button>
+
+  <button class="css-mainColumn" onclick="
+    updateLineOperator('.');
+    ">
+  .
+  </button>
+
+  <button class="css-rightColumn" onclick="
+    updateLineOperator('/');
+  ">
+  /
+  </button>
+
+  <p></p>
+
+  <button class="css-clearButton" onclick="
+    clearLine();
+  ">
+  clear
+  </button>
+
+  <button class="css-deleteButton" onclick="
+    deleteLine();
+  ">
+  delete
+  </button>
+
+
+  <script src="calculator.js"></script>
+</body>
+</html>
