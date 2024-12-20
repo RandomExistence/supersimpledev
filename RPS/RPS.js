@@ -83,7 +83,8 @@ function playGame(playerMove) {
       ++score.lose;
     }
   }
-  document.querySelector('.js-move-paragraph').innerHTML = `you : <img src='/pictureRPS/${playerMove}-emoji.png' class='outcome-img'> <img src='/pictureRPS/${compMove}-emoji.png' class='outcome-img'>: computer`;
+  document.querySelector('.js-move-paragraph').innerHTML = 
+    `you : <img src='supersimpledev/RPS/pictureRPS/${playerMove}-emoji.png' class='outcome-img'> <img src='supersimpledev/RPS/pictureRPS/${compMove}-emoji.png' class='outcome-img'>: computer`;
   updateScore();
   localStorage.setItem('score', JSON.stringify(score));
 }
